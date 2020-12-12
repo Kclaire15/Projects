@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nutrition Assesment Form</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+</html>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Nutrition Assesment Form</h1>
+
+            <p id="description" class="description">Thank you for taking the time to help us improve your health.</p>
+        </header>
+
+    
+        <form id="survey-form" action="">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="birthday-label" for="birthday">Birth Date</label>
+                <input type="date" id="birthday" name="birthday" class="form-control">
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age (optional)</label>
+                <input type="text" id="age" class="form-control" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <label id="gender-label" for="gender">Gender</label>
+                <input type="radio" id="gender" value="1" class="male"> Male
+                <input type="radio" id="gender" value="2" class="female"> Female
+            </div>
+            <div class="form-group">
+                <label id="marital-status-label" for="marital-status">Marital Status</label>
+                <input type="checkbox" id="marital-status" class="married"checked> Married
+                <input type="checkbox" id="marital-status" class="single"> Single
+            </div>
+            <div class="form-group">
+                <label id="contact-label" for="contact">Contact Number</label>
+                <input type="nummber" id="contact" class="form-control" placeholder="Contact Number"> 
+            </div>
+            <div class="form-group">
+                <label id="live-with" for="live-with">Live with</label>
+                <select id="dropdown" name="live-with" class="form-control">
+                    <option value="0"></option>
+                    <option value="1">Family</option>
+                    <option value="2">Friend</option>
+                    <option value="3">Alone</option>
+                </select>
+            </div>
+                <p class="medical-label">Medical Histroy</p>
+                <div class="form-group">
+                    <label id="MedHistory-label" for="med-history">Do you have a history of </label>
+                    <p></p>
+                    <select id="dropdown" name="med-history" class="form-control">
+                        <option value="1">Select options</option>
+                        <option value="Diabetes">Daibetes</option>
+                        <option value="High Cholesterol">High Cholesterol</option>
+                        <option value="Cancer">Cancer</option>
+                        <option value="Arthritis">Arthritis</option>
+                        <option value="High Blood Pressure">High Blood Pressure</option>
+                        <option value="Heart Disease">Heart Disease</option>
+                        <option value="Sleep Apna">Sleep Apna</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label id="medications-label" for="medications">Check all over-the-counter medications you take:</label>
+                    <input type="checkbox" id="medications" class="medications"> Multivitamins
+                        <br>
+                        <input type="checkbox" id="medications" class="medications"> Single vitamins (vitamin C, E, etc)
+                        <br>
+                        <input type="checkbox" id="medications" class="medications"> Calcium
+                        <br>
+                        <input type="checkbox" id="medications" class="medications"> Herbs
+                        <br>
+                        <input type="checkbox" id="medications" class="medications"> Other
+                </div>
+                <div class="form-rows">
+                    <div class="labels">
+                      <label for="event-details">
+                        List all prescription medications you take.
+                      </label>
+                    </div>
+                    <div class="fields">
+                      <textarea id="event-details" class="input-textarea" name="event-details" cols="1" rows="1" placeholder="Enter your prescription medications here..."></textarea>
+                    </div>
+                  </div>
+                <button class="submit-button" id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
